@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            i {
+                color: #fff;
+            }
+            a {
+                text-decoration: none;
+            }
+            ul li {
+                list-style: none;
+            }
+            ul {
+                padding: 0;
+            }
+            .title-ul {
+                margin-right: 50px;
+                margin-bottom: 1.5rem;
+                margin-top: 1.5rem;
+                
+            }
+            .title-ul1 {
+                margin-right: 50px;
+                margin-bottom: 1.5rem;
+                margin-top: 1.5rem;
+                background-color: #f1f1f1;
+            }
+            .item-nav-list {
+                float: left;
+            }
+            .mg-list {
+                margin-left: 1rem;
+            }
+            nav {
+                display: flex;
+                background-color: #49a1db;
+            }
+            nav1 {
+                display: flex;
+                background-color: #dfe6eb;
+            }
+            .search-form {
+                margin-left: 2.2rem;
+                position: relative;
+            }
+            .menu-item {
+                font-size: 1.5rem;
+                color: white;
+                text-transform: uppercase;
+            }
+            .menu-item1 {
+                font-size: 1.5rem;
+                color: black;
+                text-transform: capitalize;
+            }
+            .nav-cont {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                margin: auto;
+            }
+            .nav1-cont {
+                display: flex;
+                align-items: left;
+                flex-direction: row;
+                margin: auto;
+            }
+            .main-cont {
+                margin: auto;
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: row;
+            }
+            .left-content {
+                display: flex;
+                flex-direction: row;
+                max-width: 750px;
+                max-height: 350px;
+                flex: 1;
+            }
+            .f-lf-content{
+                display: flex;
+                flex-direction: column;
+                max-width: 500px;
+                max-height: 200px;
+            }
+            .paragraph-l-content {
+                max-width: 361px;
+            }
+            .img-h-content {
+                height: 200px;
+            }
+            .head-content{
+                display: flex;
+                flex-direction: column;
+                max-width: 400px;
+            }
+            .title-dec{
+                padding: 0.2rem;
+                color: #fff;
+                max-width: 187px;
+                background: #0873c5;
+                margin-bottom: 0.4rem;
+                clip-path: polygon(100% 0, 92% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+            }
+            .search-in {
+                background: #266eb3;
+                padding: 0.8rem 0.1rem;            
+                border: 0.6px solid #fff;
+            }
+            .bi-search {
+                position: absolute;
+                right: 3rem;
+            }
+            .f-title {
+                width: 100px;
+            }
+            .title-dec::after {
+                border-color: #0873c5 transparent;
+                right: -15px;
+                top: 0;
+            }
+            .sponsor-title {
+                width: 100px;
+            }
+            .link-title {
+                color: #fff;
+            }
+            .sub-link{
+                display: flex;
+                flex-direction: row;
+            }
+            .sub-para {
+                margin-left: 1rem;
+            }
+            .sub-img {
+                width: 130px;
+            }
+            .sub-content {
+                margin-top: 1rem;
+                padding: 1rem 0;
+                border-top: 1px solid #f1f1f1;
+            }
+            img {
+                object-fit: cover;
+            }
+            .s-lf-content
+            {
+                max-width: 400px;
+                max-height: 900px;
+            }
+            .right-content-cont {
+                border: none;
+                margin-left: 8rem;
+                display: flex;
+                flex-direction: column;
+                row-gap: 0.5rem;
+            }
+            .r-img-content {
+                width: 287px;
+            }
+    
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <div class="content">
+            <div class="nav-cont">
+              <ul class="title-ul">
+                <li class="item-nav-list">
+                  <a href="" class="menu-item">TRANG CHỦ</a>
+                </li>
+                <li class="item-nav-list mg-list">
+                  <a href="" class="menu-item">GIỚI THIỆU</a>
+                  <i class="bi bi-chevron-down"></i>
+                </li>
+                <li class="item-nav-list mg-list">
+                  <a href="" class="menu-item">TIN TỨC SỰ KIỆN</a>
+                  <i class="bi bi-chevron-down"></i>
+                </li>
+                <li class="item-nav-list mg-list">
+                  <a href="" class="menu-item">THÔNG TIN KTXH</a>
+                  <i class="bi bi-chevron-down"></i>
+                </li>
+                <li class="item-nav-list mg-list">
+                    <a href="" class="menu-item">THÔNG TIN CHUYÊN NGÀNH</a>
+                    <i class="bi bi-chevron-down"></i>
+                  </li>
+                <li class="item-nav-list mg-list">
+                  <a href="" class="menu-item">VĂN BẢN</a>
+                  <i class="bi bi-chevron-down"></i>
+                </li>
+                <li class="item-nav-list mg-list">
+                    <a href="" class="menu-item">HỎI ĐÁP</a>
+                    <i class="bi bi-chevron-down"></i>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+          <nav1>
+            <div class="nav1-cont">
+                <ul class="title-ul">
+                  <li class="item-nav1-list">
+                    <a href="" class="glyphicon glyphicon-calendar" class="menu-item1" style="color:black;font-size:1.5rem;" >Thứ sáu, ngày 29 tháng 4 năm 2022 | 9:57 GMT+7</a>
+                  </li>
+                </ul>
+            </div>   
+          </nav1>
+
+          <div class="main-cont">
+              <div class="first-column">
+            <div class="left-content row">
+                    <div class="head-content">
+                      <img
+                        src="https://fileportalcms.mpi.gov.vn/Tinbai/NoiDung/2022/03/21/53405/1.png" class="img-fluid img-h-content" alt="">
+                      <p class="paragraph-l-content"><b>Bộ kế hoạch và đầu tư làm việc với các doanh nghiệp nhà nước</b></p>
+                    </div>
+
+                <div class="s-lf-content col">
+                    <p><b>Tin nổi bật Tin mới nhất</b></p>
+                    <hr>
+                    <p>Lấy ý kiến góp ý rộng rãi của cộng đồng dân cư, tổ chức và cá nhân cho dự thảo Quy hoạch thành</p>
+                    <hr>
+                    <p>UBND thành phố Đà Nẵng tổ chức hội thảo lấy ý kiến về "Quy hoạch thành phố Đà Nẵng thời kỳ</p>
+                    <hr>
+                    <p>Hội nghị toàn quốc về phát triển kinh tế - xã hội</p>
+                    <hr>
+                    <p>Hội nghị triển khai kết luận số 21-KL/TW, Quy định số 37-QĐ/TW ngày 25/10/2021 của Ban</p>
+                    <hr>
+                    <p>Tiếp tục đổi mới, nâng cao hiệu quả hoạt động của doanh nghiệp nhà nước</p>
+                    <hr>
+                    <p>Bộ kế hoạch và Đầu tư làm việc với các doanh nghiệp nhà nước</p>
+                </div>
+            </div>
+
+            <div class="row-under">
+                <img
+                    src="https://scontent.fdad1-2.fna.fbcdn.net/v/t31.18172-8/11223890_445636022287509_5158468798134645871_o.png?_nc_cat=105&ccb=1-5&_nc_sid=174925&_nc_ohc=kPqfStaA06oAX_50zEp&_nc_ht=scontent.fdad1-2.fna&oh=00_AT9voidJ_-NTA_2AIwp4WzF748VhftRYi8zKNY13WE5pHg&oe=62923212" class="img-fluid img-h-content" alt="">
+            </div>
+              </div>
+            <div class="right-content-cont">
+                <img class="r-img-content"
+                  src="https://nguhanhson.danang.gov.vn/documents/11640/3362401/khuyencaoTT.jpg/ab50a4a6-ff79-40c8-a740-e44ff62178e9?t=1585641236770"
+                  alt="">                  
+                  <img class="r-img-content"
+                  src="https://ketoananpha.vn/uploads/images/post/93-moi/thu-tuc-dang-ky-giay-phep-kinh-doanh-online-01.jpg"
+                  alt=""> 
+                
+                  <p style="font-size: medium;"><b>Thông báo</b> </p>
+                  <hr>
+                  <p>Thông báo về việc báo cáo tình hình thực hiện hoạt động đấu thầu năm 2021 </p>
+                  <p>Thông báo yêu cầu doanh nghiệp báo cáo về việc tuân thủ các quy định của luật doanh nghiệp trong tháng 10/2021</p>
+                  <p>Đăng ký tham dự lớp "Quản trị doanh nghiệp trong kỷ nguyên chuyển đổi số "</p>
+                  <p>Thông báo về việc góp ý Hồ sơ đề</p>
+
+              </div>
+          </div>
+          </div>
+          
+
+    </body>
+</html>

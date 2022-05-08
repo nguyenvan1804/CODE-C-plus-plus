@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='cgpa.xsl'?> 
+<student>
+    <name>Nguyễn Hồng Vân</name>
+    <age>19</age>
+    <address>Quảng Nam</address>
+    <branch>Information Technology</branch>
+</student>

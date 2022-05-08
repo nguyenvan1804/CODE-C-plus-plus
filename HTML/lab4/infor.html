@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            .box{
+                background: white;
+                border-left:6px solid red;
+            }
+            p {
+                margin-top:50px;
+                display:flex;
+            }    
+            p:after {
+                color:rgba(104, 100, 100, 0.295);
+                content:'';
+                flex:1;
+                border-bottom:solid 2px;
+                margin:auto 0.5em;
+            }
+            body{
+                display:flex;
+                height: 50vh;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p style="color:rgb(18, 156, 180)"><b style="font-size:160%;">Thông tin tài khoản</b> <i style="font-size:140%;">(bắt buộc)</i></p>
+            <div class="an-hien" >
+                <input type="button" class="button" style="color: black;" id="btn2" value="Xem thêm"/>
+                <input type="button" class="button" style="color: black;" id="btn1" value="Thu Gọn"/>
+            </div>
+        </div>
+
+        <div id="content" style="display: none;">
+            <form action="action_page.php" method="GET">
+                <div> 
+                    <label for="fname">Họ tên <span style="color:red">&ast;</span></label>
+                    <input type="text" id="fname" name="fname" placeholder="Nguyen Van A">
+                </div>
+            
+                <br>
+
+                <div>
+                    <label for="lname">Số điện thoại <span style="color:red">&ast;</span></label>
+                    <input type="text" id="lname" name="lname" placeholder="0123456789">
+                </div> 
+
+                <br>
+
+                <div>
+                    <label for="dateBirth">Ngày sinh <span style="color:red">&ast;</span></label>
+                    <select name="dateBirth" id="dateBirth" style="width: 350px; height:27px">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select name="monthBirth" id="monthBirth">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select name="yearsBirth" id="yearsBirth">
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div> 
+
+                <br>
+
+                <div>
+                    <label for="gioitinh">Giới tính <span style="color:red">&ast;</span></label>
+                    <select style="width: 350px; height:27px">
+                        <option value="Nam">Nam</option>
+                        <option value="Nu">Nữ</option>
+                        <option value="Chuaxacdinh">Chưa xác định</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="honnhan">Hôn nhân <span style="color:red">&ast;</span></label>
+                    <select style="width: 350px; height:27px">
+                        <option value="Kethon">Kết hôn</option>
+                        <option value="docthan">Độc thân</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="tinh">Tỉnh/Thành phố <span style="color:red">&ast;</span></label>
+                    <select style="width: 350px; height:27px">
+                            <option value="Đà Nẵng">Đà Nẵng
+                            <option value="An Giang">An Giang
+                            <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
+                            <option value="Bắc Giang">Bắc Giang
+                            <option value="Bắc Kạn">Bắc Kạn
+                            <option value="Bạc Liêu">Bạc Liêu
+                            <option value="Bắc Ninh">Bắc Ninh
+                            <option value="Bến Tre">Bến Tre
+                            <option value="Bình Định">Bình Định
+                            <option value="Bình Dương">Bình Dương
+                            <option value="Bình Phước">Bình Phước
+                            <option value="Bình Thuận">Bình Thuận
+                            <option value="Bình Thuận">Bình Thuận
+                            <option value="Cà Mau">Cà Mau
+                            <option value="Cao Bằng">Cao Bằng
+                            <option value="Đắk Lắk">Đắk Lắk
+                            <option value="Đắk Nông">Đắk Nông
+                            <option value="Điện Biên">Điện Biên
+                            <option value="Đồng Nai">Đồng Nai
+                            <option value="Đồng Tháp">Đồng Tháp
+                            <option value="Đồng Tháp">Đồng Tháp
+                            <option value="Gia Lai">Gia Lai
+                            <option value="Hà Giang">Hà Giang
+                            <option value="Hà Nam">Hà Nam
+                            <option value="Hà Tĩnh">Hà Tĩnh
+                            <option value="Hải Dương">Hải Dương
+                            <option value="Hậu Giang">Hậu Giang
+                            <option value="Hòa Bình">Hòa Bình
+                            <option value="Hưng Yên">Hưng Yên
+                            <option value="Khánh Hòa">Khánh Hòa
+                            <option value="Kiên Giang">Kiên Giang
+                            <option value="Kon Tum">Kon Tum
+                            <option value="Lai Châu">Lai Châu
+                            <option value="Lâm Đồng">Lâm Đồng
+                            <option value="Lạng Sơn">Lạng Sơn
+                            <option value="Lào Cai">Lào Cai
+                            <option value="Long An">Long An
+                            <option value="Nam Định">Nam Định
+                            <option value="Nghệ An">Nghệ An
+                            <option value="Ninh Bình">Ninh Bình
+                            <option value="Ninh Thuận">Ninh Thuận
+                            <option value="Phú Thọ">Phú Thọ
+                            <option value="Quảng Bình">Quảng Bình
+                            <option value="Quảng Bình">Quảng Bình
+                            <option value="Quảng Ngãi">Quảng Ngãi
+                            <option value="Quảng Ninh">Quảng Ninh
+                            <option value="Quảng Trị">Quảng Trị
+                            <option value="Sóc Trăng">Sóc Trăng
+                            <option value="Sơn La">Sơn La
+                            <option value="Tây Ninh">Tây Ninh
+                            <option value="Thái Bình">Thái Bình
+                            <option value="Thái Nguyên">Thái Nguyên
+                            <option value="Thanh Hóa">Thanh Hóa
+                            <option value="Thừa Thiên Huế">Thừa Thiên Huế
+                            <option value="Tiền Giang">Tiền Giang
+                            <option value="Trà Vinh">Trà Vinh
+                            <option value="Tuyên Quang">Tuyên Quang
+                            <option value="Vĩnh Long">Vĩnh Long
+                            <option value="Vĩnh Phúc">Vĩnh Phúc
+                            <option value="Yên Bái">Yên Bái
+                            <option value="Phú Yên">Phú Yên
+                            <option value="Tp.Cần Thơ">Tp.Cần Thơ
+                            <option value="Tp.Hải Phòng">Tp.Hải Phòng
+                            <option value="Tp.Hà Nội">Tp.Hà Nội
+                            <option value="TP  HCM">TP HCM
+                    </select>
+                </div>
+                
+                <br>
+
+                <div> 
+                    <label for="address">Chỗ ở hiện tại <span style="color:red">&ast;</span></label>
+                    <input type="text" id="address" name="address">
+                </div>
+
+                <br>
+
+                <div class="container">                    
+                    <button class="glyphicon glyphicon-floppy-disk" style="background-color:red; color:white; height: 50px; width:100px">
+                        Lưu
+                    </button>
+                </div> 
+            </form>
+        </div>
+        <script language="javascript">
+            document.getElementById("btn1").onclick = function () {
+              document.getElementById("content").style.display = 'none';
+            };
+            document.getElementById("btn2").onclick = function () {
+              document.getElementById("content").style.display = 'block';
+            };
+          </script>
+    </body>
+    
+</html>
