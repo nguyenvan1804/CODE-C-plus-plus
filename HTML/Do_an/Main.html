@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trang chủ</title>
+        <style>
+            .container
+            {
+                background-color: #f5f5dc;
+                height:5000px;
+            }
+            .container11
+            {
+                background-color: #f5f5dc;
+            }
+            .container2
+            {
+                background-color: #f5f5dc;
+            }
+            .table1
+            {
+                height:100px;
+                
+            }
+            .table2
+            {
+                width:2100px;
+            }
+            .table3
+            {
+                background-color: #f5f5dc;
+                position:absolute;
+                height:100px;
+                left:500px;
+                right:500px;
+                top:949px;
+            }
+            .table33
+            {
+                background-color: #f5f5dc;
+                position:absolute;
+                height:100px;
+                left:500px;
+                right:500px;
+                top:1100px;
+            }
+            .table4
+            {
+                background-color: #f5f5dc;
+                position:absolute;
+                height:100px;
+                left:500px;
+                right:500px;
+                top:1400px;
+            }
+            .table5
+            {
+                background-color: #f5f5dc;
+                position:absolute;
+                height:100px;
+                left:500px;
+                right:500px;
+                top:1700px;
+            }
+            .table6
+            {
+                background-color: #f5f5dc;
+                position:absolute;
+                height:100px;
+                left:500px;
+                right:500px;
+                top:2000px;
+            }
+            .table7
+            {
+                background-color: #f5f5dc;
+                position:absolute;
+                height:100px;
+                left:500px;
+                right:500px;
+                top:2300px;
+            }
+            .table8
+            {
+                background-color: #f5f5dc;
+                position:absolute;
+                height:100px;
+                left:500px;
+                right:500px;
+                top:2600px;
+            }
+            .table9
+            {
+                background-color: #92923f;
+                position:absolute;
+                height:200px;
+                width:2100px;                
+                top:2900px;
+            }
+            .img
+            {
+                margin-left: 200px;
+            }
+            .menu
+            {
+                margin-left: 150px;
+            }
+            #main-menu 
+            {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            #main-menu li 
+            {
+                position: relative;
+            }
+            #main-menu li a 
+            {
+                color: black;
+                /*su dung block de ta co the tac dong cac padding cho chung*/
+                display: block;
+                padding: 18px 20px;
+                text-decoration: none;
+            }
+            .action 
+            {
+                font-size: 30px;
+                font-family: monospace;
+                font-weight: bold;
+            }
+            #main-menu li a.action 
+            {
+                color:  rgb(26, 27, 26);
+            }
+            #main-menu ul.sub-menu 
+            {
+                /*thiet lap troi noi dieu khien boi main-menu*/
+                position: absolute;
+                background-color: white;
+                padding: 15px 0px;
+                list-style: none;
+                width: 200px;
+                top: 60px;
+                /*left: 0;*/
+                border: 1px solid rgb(197, 187, 38);
+                border-top: none;
+                /*an cac sub-menu*/
+                display: none;
+            }
+            /*chi xuat hien khi hover chuot vao li*/
+            #main-menu li:hover>ul.sub-menu 
+            {
+                display: block;
+            }
+            #main-menu ul.sub-menu a 
+            {
+                padding: 8px 15px;
+                border-bottom: 1px solid rgb(247, 205, 19);
+                /*top: 200px;*/
+                left: 0;
+            }
+            /*>: chi tac dong den the a truc tiep, ko anh huong den a cua menu thu 3*/
+            #main-menu ul.sub-menu li:hover>a 
+            {
+                padding: 8px 15px;
+                border-bottom: 1px solid yellow;
+            }
+            #main-menu ul.sub-menu li:last-child a 
+            {
+                border-bottom: none;
+            }
+            #main-menu ul.sub-menu ul.sub-menu 
+            {
+                left: 200px;
+                top: -15px;
+            }
+            .textfield
+            {
+                border-radius: 30px;
+                margin-left: 100px;
+                height: 40px;
+                width: 220px;
+            }
+            .button1
+            {
+                border-radius: 20px;
+                height:25px;
+                width:100px;
+                background-color: rgb(153, 222, 224);
+                font-size: 15px;
+                font-weight: bolder;
+                color:aliceblue;
+                
+            }
+            .button2
+            {
+                border-radius: 15px;
+                font-size: 25px;
+                font-weight: bolder;
+                font-family: monospace;
+                color:rgb(51, 33, 5);
+                background-color: bisque;
+                margin-bottom: 10px;
+                margin-left: 160px;
+            }
+
+            ::-webkit-input-placeholder {
+                font-style: italic;
+                font-size: 20px;
+                font-family: monospace;
+                background: url('')
+            }
+
+                /* Firefox 19+ */
+            ::-moz-placeholder {
+                font-style: italic;
+            }
+
+                /* IE 10+ */
+            :-ms-input-placeholder {
+                font-style: italic;
+            }
+
+                /* Firefox 18- */
+            :-moz-placeholder {
+                font-style: italic;
+            }
+            .logo1
+            {
+                font-size: 100px;
+                margin-left: 560px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .logo
+            {
+                margin-top: 10px;
+            }
+            .logo2
+            {
+                font-size: 60px;
+                margin-top: 10px;
+            }
+            .image
+            {
+                margin-left: 900px;
+            }
+            .img1
+            {
+                margin-left: 100px;
+                margin-top: -70px;
+            }
+            .img2
+            {
+                border-radius: 20px;
+            }
+            h4
+            {
+                font-size: 30px;
+                margin-left: 400px;
+            }
+            p
+            {
+                font-size: 20px;
+                font-family: monospace;
+            }
+            .intro
+            {
+                font-size: 30px;
+            }
+            .content
+            {
+                margin-left: 50px;
+            }
+            .container11
+            {
+                background-color: #f5f5dc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <table class="table1" >
+                <tr>
+                    <td>
+                        <div class="img">
+                            <img src="[Original size] Igor.png" width="200" height="200">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="menu">
+                            <ul id="main-menu">
+                                <li><a href="D:\Documents\Đồ án cơ sở 1\Trang-chu.html" class="action">Trang chủ</a></li>
+                                <li><a href="" class="action">Tra cứu</a>
+                                <!-- class dung duoc nhieu cai, id chi mot -->
+                                <ul class="sub-menu">
+                                    <li><a href="D:\Documents\Đồ án cơ sở 1\Tu-lieu-hoc-tap.html">Tư liệu học tập</a></li>
+                                    <li><a href="">Tin tức công nghệ</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">Menu 2.2.1</a></li>
+                                            <li><a href="">Menu 2.2.2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul></li>
+                                <li><a href="D:\Documents\Đồ án cơ sở 1\Dien-dan.html" class="action">Diễn đàn</a><ul class="sub-menu">
+                                    <li><a href="">Bài đăng mới</a></li>
+                                    <li><a href="D:\Documents\Đồ án cơ sở 1\Tim-kiem-chu-de.html">Tìm kiếm chủ đề</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="D:\Documents\Đồ án cơ sở 1\Blog.html" class="action">Blog</a></li>
+                                <li><a href="D:\Documents\Đồ án cơ sở 1\Tuyen-dung.html" class="action">Tuyển dụng</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="textfield" type="text" id="fname" name="fname" placeholder="./*Nhập tìm kiếm*/.">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container1">                    
+                            <button class="button1" >
+                                Đăng ký
+                            </button>
+                            <button class="button1" >
+                                Đăng nhập
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table class="table2">
+                <tr>
+                    <td>
+                        <div class="image">
+                            <img src="coding.png">
+                        </div>
+                        <div class="logo">
+                            <p class="logo1"><ins>Igor.com</ins><a class="logo2">- Người bạn đồng hành</a></p>    
+                        </div>
+                    </td>                   
+                </tr>
+            </table>
+            <table class="table2" frame="below">
+                <tr>
+                    <td>
+                        <div class="img1">
+                            <img src="code (1).png">
+                        </div>
+                    </td>
+                    <td>
+                            <b class="intro">About blog:</b>
+                            <p>Chúng tôi tạo ra blog này để giúp các bạn trẻ mới chập chững đứng trên con đường lập trình 
+                                có thể có định hướng tốt hơn.
+                                Nó sẽ giúp các bạn biết được ngôn ngữ lập<br> trình nào cần học khi mới bắt đầu, phần mềm lập trình
+                                nào chất lượng, những trang web học lập trình cũng như những cộng đồng lập trình ở Việt Nam và trên thế giới,...
+                                <br>
+                                Mình mong blog sẽ giúp ích cho các bạn nhiều hơn!!!
+                            </p>
+                    </td>
+                </tr>
+            </table>
+            <table class="table3">
+                <tr>
+                    <td>
+                        <div>
+                            <h4>Bài viết mới nhất</h4>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table class="table33" frame="below">
+                <tr>
+                    <td>
+                        <div >
+                            <img class="img2" src="https://coder.com.vn/wp-content/uploads/2021/01/8-ngon-ngu-lap-trinh-phan-mem.png" style="width:500px; height:250px">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="content">
+                            <h2>*Một số ngôn ngữ lập trình cho người mới bắt đầu</h2>
+                            <p>Bài viết sẽ giới thiệu cho các bạn một số ngôn ngữ lập trình phổ biến hiện nay</p>
+                            <p>May 1, 2022 | 5 mins read</p>                     
+                                <button class="button2" >
+                                    Read more
+                                </button>
+                        </div>                        
+                    </td>
+                </tr>
+            </table>
+            <table class="table4" frame="below">
+                <tr>
+                    <td>
+                        <div >
+                            <img class="img2" src="https://sharekynang.com/wp-content/uploads/2021/08/top-5-web-hoc-lap-trinh.webp" style="width:500px; height:250px">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="content">
+                            <h2>*Những trang web học lập trình miễn phí</h2>
+                            <p>Bài viết sẽ giới thiệu cho các bạn những trang web giúp luyện thuật toán, tư duy lập trình</p>
+                            <p>April 28, 2022 | 5 mins read</p>                    
+                                <button class="button2" >
+                                    Read more
+                                </button>
+                        </div>                        
+                    </td>
+                </tr>
+            </table>
+            <table class="table5" frame="below">
+                <tr>
+                    <td>
+                        <div >
+                            <img class="img2" src="8-Website-học-lập-trình-cho-học-sinh-cấp-2-2 (3).png" style="width:500px; height:250px">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="content">
+                            <h2>*Những ứng dụng lập trình cơ bản</h2>
+                            <p>Bài viết này giúp các bạn nhận biết được phần mềm lập trình nào tốt, chất lượng</p>
+                            <p>May 7, 2022 | 5 mins read</p>                     
+                            <button class="button2" >
+                                Read more
+                            </button>
+                        </div>                        
+                    </td>
+                </tr>
+            </table>
+            <table class="table6" frame="below">
+                <tr>
+                    <td>
+                        <div >
+                            <img class="img2" src="tu_hoc_code.png" style="width:500px; height:250px">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="content">
+                            <h2>*Bốn nguyên tắc cơ bản khi học lập trình</h2>
+                            <p>Theo mentor FUNiX Cao Văn Việt, sinh viên nên thực hành nhiều, làm dự án, làm việc nhóm và nắm chắc một ngôn ngữ hơn là học nhiều mà dàn trải.</p>
+                            <p>May 10, 2022 | 5 mins read</p>                     
+                            <button class="button2" >
+                                Read more
+                            </button> 
+                        </div>                      
+                    </td>
+                </tr>
+            </table>
+            <table class="table7" frame="below">
+                <tr>
+                    <td>
+                        <div >
+                            <img class="img2" src="thoi_gian_dong_luc.png" style="width:500px; height:250px">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="content">
+                            <h2>*Thời gian và động lực</h2>
+                            <p>Có lẽ cũng rất lâu rồi mà tôi chưa đụng đến thứ được gọi là "timetable". Hay dân dã hơn thì người ta hay gọi là "Lịch thường nhật",...</p>
+                            <p>May 5, 2022 | 2 mins read</p>                  
+                            <button class="button2" >
+                                Read more
+                            </button>    
+                        </div>                    
+                    </td>
+                </tr>
+            </table>
+            <table class="table8">
+                <tr>
+                    <td>
+                        <div >
+                            <img class="img2" src="https://24hstore.vn/upload_images/images/2020/07/16/quet-ma-qr-android-2.jpg" style="width:500px; height:250px">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="content">
+                            <h2>*Hướng dẫn quét mã QR code trên điện thoại Android và iOS một cách dễ dàng</h2>
+                            <p>Trong bài viết này, mình sẽ chia sẻ các cách nhanh chóng để quét mã QR ngay lập tức trên điện thoại...</p>
+                            <p>May 5, 2022 | 2 mins read</p>                           
+                            <button class="button2" >
+                                Read more
+                            </button>                              
+                        </div>                    
+                    </td>
+                </tr>
+            </table>
+
+            <table class="table9">
+                <tr>
+                    <td>
+                        <p>Copyright &copy; 2022 Igor. All right reserved.</p>
+                        <p>Cảm ơn mọi người đã theo dõi blog của chúng tôi<br> Rất mong nhận được sự đóng góp ý kiến của mọi người!!!</p>
+                    </td>
+                    <td>
+                        <
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
